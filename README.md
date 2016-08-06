@@ -7,7 +7,7 @@ echo is Fast and unfancy HTTP server framework for Go (Golang). Up to 10x faster
 go get -u github.com/labstack/echo
 
 mgo is mongodb driver golang
-Firebase 에도 사용되고 있지요?
+ex) Firebase 
 go get gopkg.in/mgo.v2
 ```
 
