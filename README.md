@@ -23,7 +23,7 @@ go run main.go
 ```
 http://localhost:3333
 
-body message 는 아래와 같습니다.
+body message 예제는 아래와 같습니다.
 {
   "TodoMessage": "foo bar"
 }
