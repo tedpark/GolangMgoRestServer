@@ -1,14 +1,16 @@
 # GolangMgoRestServer
 
 
-0. pkg 를 가져와 봅니다.
-//echo
-//Fast and unfancy HTTP server framework for Go (Golang). Up to 10x faster than the rest.
+##0. pkg 를 가져와 봅니다.
+```
+echo
+Fast and unfancy HTTP server framework for Go (Golang). Up to 10x faster than the rest.
 go get -u github.com/labstack/echo
 
-//mongodb driver golang
-//Firebase 에도 사용되고 있지요?
+mongodb driver golang
+Firebase 에도 사용되고 있지요?
 go get gopkg.in/mgo.v2
+```
 
 
 1. local mongodb 를 실행 후 golang server 를 실행해 봅니다.
@@ -33,5 +35,4 @@ func Init(e *echo.Echo) {
 	e.POST("/api/todos", todocontroller.NewTodo)
 	e.DELETE("/api/todos/:id", todocontroller.RemoveTodo)
 }
-
 
