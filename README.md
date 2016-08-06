@@ -3,11 +3,10 @@
 
 ####0. pkg 를 가져와 봅니다.
 ```
-echo
-Fast and unfancy HTTP server framework for Go (Golang). Up to 10x faster than the rest.
+echo is Fast and unfancy HTTP server framework for Go (Golang). Up to 10x faster than the rest.
 go get -u github.com/labstack/echo
 
-mongodb driver golang
+mgo is mongodb driver golang
 Firebase 에도 사용되고 있지요?
 go get gopkg.in/mgo.v2
 ```
