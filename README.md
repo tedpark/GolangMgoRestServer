@@ -1,7 +1,7 @@
 # GolangMgoRestServer
 
 
-####0. pkg 를 가져와 봅니다.
+####0. go get pkg
 ```
 echo is Fast and unfancy HTTP server framework for Go (Golang). Up to 10x faster than the rest.
 go get -u github.com/labstack/echo
@@ -12,24 +12,24 @@ go get gopkg.in/mgo.v2
 ```
 
 
-####1. local mongodb 를 실행 후 golang server 를 실행해 봅니다.
+####1. run local mongodb and run golang server
 ```
 go run main.go
-//이런 결과가 나오겠지요.
+//You can see this message.
 =>  Running at :3333
 ```
 
-####2. 주소는 아래와 같습니다.
+####2. rest api
 ```
-http://localhost:3333
+http://localhost:3333/api/todos/
 
-body message 예제는 아래와 같습니다.
+ex) POST body 
 {
   "TodoMessage": "foo bar"
 }
 ```
 
-####3. http://localhost:3333/api/todos/ 입니다.
+####3. http://localhost:3333/api/todos/
 ```
 func Init(e *echo.Echo) {
 	e.GET("/api/todos", todocontroller.GetAll)
